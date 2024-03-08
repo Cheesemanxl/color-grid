@@ -14,11 +14,17 @@ export class ColorPickerComponent {
     'white',
     'black',
     'red',
-    'blue',
     'orange',
     'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet',
+    'pink',
+    'purple',
     'brown',
-    'grey',
+    '#B9B9B6',
+    'lime',
     'cyan'
   ]
 
@@ -28,8 +34,6 @@ export class ColorPickerComponent {
 
   onOptionClicked(e: MouseEvent, color: string): void {
     const prevSelection: HTMLElement | null = document.querySelector('.selected-option');
-
-    console.log(prevSelection);
 
     if (prevSelection) {
       prevSelection.classList.remove('selected-option');
